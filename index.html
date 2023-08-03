@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation </title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 200px auto;
+            animation-name: abc;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes abc {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin: 200px auto;
+            animation-name: pqr;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes pqr {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background: orange;
+
+            animation-name: xyz;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes xyz {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            75% {
+                background-color: black;
+            }
+
+            100% {
+                transform: translateX(1300px);
+            }
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background: blue;
+
+            animation-name: cbx;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes cbx {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(800px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+
+
+</body>
+
+</html>
